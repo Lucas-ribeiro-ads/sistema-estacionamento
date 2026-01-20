@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Gerenciamento de Estacionamento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="header">
+    <h1 id="titulo">Estacionamento SmartPark</h1>
+    <p id="subtitulo">Controle de Entrada e Saída de Veículos</p>
+    <p id="contador">Vagas ocupadas: 0</p>
+  </header>
+
+  <main id="container">
+
+    <!-- aqui começa formulário -->
+    <section id="formulario">
+      <h2 id="tituloFormulario">Entrada de Veículo</h2>
+
+      <form id="formEntrada">
+        <label for="placa">Placa do Veículo</label>
+        <input id="placa" type="text" placeholder="ABC-1234">
+
+        <label for="modelo">Modelo</label>
+        <input id="modelo" type="text" placeholder="Ex: Corolla">
+
+        <label for="condutor">Nome do Condutor</label>
+        <input id="condutor" type="text" placeholder="Nome completo">
+
+      
+
+        <button id="btnEntrada" type="submit">Registrar Entrada</button>
+      </form>
+    </section>
+
+    <!-- aqui é a tabela onde os veículos vão aparecer -->
+    <section id="tabela">
+      <h2 id="tituloTabela">Veículos Estacionados</h2>
+
+      <table id="listaVeiculos">
+        <thead id="cabecalhoTabela">
+          <tr>
+            <th>Placa</th>
+            <th>Modelo</th>
+            <th>Condutor</th>
+            <th>Entrada</th>
+            <th>Ação</th>
+          </tr>
+          
+        </thead>
+        <tbody id="corpoTabela">
+          
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+  <!-- rodapé  -->
+  <footer id="footer">
+    <p id="textoFooter"> Sistema de Estacionamento SmartPark</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
