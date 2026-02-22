@@ -123,6 +123,22 @@
 }
 
 
+#corpoTabela button:not(.btnSaida) {
+  margin-top: 6px;
+  padding: 6px 10px;
+  background: transparent;
+  border: 1px solid #2563eb;
+  color: #2563eb;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.2s ease;
+}
+
+#corpoTabela button:not(.btnSaida):hover {
+  background: #2563eb;
+  color: white;
+}
 
 
 
